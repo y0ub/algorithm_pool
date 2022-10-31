@@ -1,1 +1,2 @@
 # algorithm_pool
+好き勝手にalgorithm的なコードをupする
