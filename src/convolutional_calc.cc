@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-std::vector<std::vector<int>> conb(
+std::vector<std::vector<int>> max_conv(
     const std::vector<std::vector<int>> &array,
     const std::vector<std::vector<int>> &filter)
 {
@@ -28,7 +28,6 @@ std::vector<std::vector<int>> conb(
         std::cout << e << ' ';
       }
       std::cout << '\n';
-      getchar();
     }
   }
   return v;
@@ -49,7 +48,7 @@ int main()
   //   {0, 1, 2},
   //   {1, 0, 2}};
 
-  auto ret = conb(v, filter);
+  auto ret = max_conv(v, filter);
 
   for (auto row : ret) {
     for (auto cell : row) {
